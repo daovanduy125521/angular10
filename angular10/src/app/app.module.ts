@@ -8,6 +8,8 @@ import { ChildrenComponent } from './children/children.component';
 import { RequiredLabelDirective } from './required-label.directive';
 import { CurrencyVndPipe } from './pipe/currency.pipe';
 import { DecimalPipe } from '@angular/common';
+import { HostComponent } from './service/component-factory-resolve/host/host.component';
+import { HelloComponent } from './service/component-factory-resolve/hello.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { DecimalPipe } from '@angular/common';
     ParentComponent,
     ChildrenComponent,
     RequiredLabelDirective,
-    CurrencyVndPipe
+    CurrencyVndPipe,
+    HostComponent,
+    HelloComponent
   ],
   imports: [
     BrowserModule,
