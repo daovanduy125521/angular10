@@ -10,6 +10,7 @@ import { CurrencyVndPipe } from './pipe/currency.pipe';
 import { DecimalPipe } from '@angular/common';
 import { HostComponent } from './service/component-factory-resolve/host/host.component';
 import { HelloComponent } from './service/component-factory-resolve/hello.component';
+import { TemplateRefComponent } from './service/view-container-ref/template-ref/template-ref.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HelloComponent } from './service/component-factory-resolve/hello.compon
     RequiredLabelDirective,
     CurrencyVndPipe,
     HostComponent,
-    HelloComponent
+    HelloComponent,
+    TemplateRefComponent
   ],
   imports: [
     BrowserModule,
