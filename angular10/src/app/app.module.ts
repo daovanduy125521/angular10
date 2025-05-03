@@ -11,6 +11,8 @@ import { DecimalPipe } from '@angular/common';
 import { HostComponent } from './service/component-factory-resolve/host/host.component';
 import { HelloComponent } from './service/component-factory-resolve/hello.component';
 import { TemplateRefComponent } from './service/view-container-ref/template-ref/template-ref.component';
+import { ComponentOutletComponent } from './service/view-container-ref/component-outlet/component-outlet.component';
+import { AlertComponent } from './service/view-container-ref/alert.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { TemplateRefComponent } from './service/view-container-ref/template-ref/
     CurrencyVndPipe,
     HostComponent,
     HelloComponent,
-    TemplateRefComponent
+    TemplateRefComponent,
+    ComponentOutletComponent,
+    AlertComponent
   ],
   imports: [
     BrowserModule,
