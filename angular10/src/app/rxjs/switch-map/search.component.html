@@ -1,0 +1,4 @@
+<input type="text" [formControl]="searchControl" placeholder="Tìm kiếm..." />
+<ul *ngIf="results.length > 0">
+    <li *ngFor="let item of results">{{ item.login }}</li>
+</ul>

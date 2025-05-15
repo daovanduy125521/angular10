@@ -13,6 +13,9 @@ import { HelloComponent } from './service/component-factory-resolve/hello.compon
 import { TemplateRefComponent } from './service/view-container-ref/template-ref/template-ref.component';
 import { ComponentOutletComponent } from './service/view-container-ref/component-outlet/component-outlet.component';
 import { AlertComponent } from './service/view-container-ref/alert.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { SearchComponent } from './rxjs/switch-map/search.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,11 +28,14 @@ import { AlertComponent } from './service/view-container-ref/alert.component';
     HelloComponent,
     TemplateRefComponent,
     ComponentOutletComponent,
-    AlertComponent
+    AlertComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule ,
+    HttpClientModule 
   ],
   providers: [DecimalPipe],
   bootstrap: [AppComponent]
