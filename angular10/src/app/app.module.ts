@@ -18,6 +18,7 @@ import { SearchComponent } from './rxjs/switch-map/search.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserComponent } from './rxjs/merge-map/user.component';
 import { UserSequentialComponent } from './rxjs/concat-map/user-sequential.component';
+import { MyComponent } from './rxjs/exhaust-map/my-component.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { UserSequentialComponent } from './rxjs/concat-map/user-sequential.compo
     AlertComponent,
     SearchComponent,
     UserComponent,
-    UserSequentialComponent
+    UserSequentialComponent,
+    MyComponent
   ],
   imports: [
     BrowserModule,

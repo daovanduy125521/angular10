@@ -1,0 +1,14 @@
+<div style="text-align:center">
+  <h1>{{ title }}</h1>
+
+  <!-- Nút gọi API -->
+  <button id="apiButton" [disabled]="loading">
+    {{ loading ? 'Đang tải... (Vui lòng đợi)' : 'Gọi API' }}
+  </button>
+
+  <!-- Hiển thị kết quả API -->
+  <div *ngIf="!loading">
+    <p><strong>Kết quả API:</strong></p>
+    <pre>{{ apiResponse | json }}</pre>
+  </div>
+</div>
