@@ -17,6 +17,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { SearchComponent } from './rxjs/switch-map/search.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserComponent } from './rxjs/merge-map/user.component';
+import { UserSequentialComponent } from './rxjs/concat-map/user-sequential.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { UserComponent } from './rxjs/merge-map/user.component';
     ComponentOutletComponent,
     AlertComponent,
     SearchComponent,
-    UserComponent
+    UserComponent,
+    UserSequentialComponent
   ],
   imports: [
     BrowserModule,

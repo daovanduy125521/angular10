@@ -1,0 +1,9 @@
+<h2>Gọi API tuần tự với concatMap</h2>
+<button (click)="fetchUsersSequentially()" [disabled]="loading">
+  {{ loading ? 'Đang tải...' : 'Tải danh sách người dùng' }}
+</button>
+<ul>
+  <li *ngFor="let user of users">
+    ID: {{ user.id }}, Name: {{ user.name }}
+  </li>
+</ul> 
