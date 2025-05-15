@@ -16,6 +16,7 @@ import { AlertComponent } from './service/view-container-ref/alert.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SearchComponent } from './rxjs/switch-map/search.component';
 import { HttpClientModule } from '@angular/common/http';
+import { UserComponent } from './rxjs/merge-map/user.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { HttpClientModule } from '@angular/common/http';
     TemplateRefComponent,
     ComponentOutletComponent,
     AlertComponent,
-    SearchComponent
+    SearchComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
